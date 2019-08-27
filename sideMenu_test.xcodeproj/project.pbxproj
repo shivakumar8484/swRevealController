@@ -14,6 +14,9 @@
 		313072DB2314128A0000E1AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 313072D92314128A0000E1AF /* LaunchScreen.storyboard */; };
 		313072E62314128C0000E1AF /* sideMenu_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313072E52314128C0000E1AF /* sideMenu_testTests.swift */; };
 		313072F12314128C0000E1AF /* sideMenu_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313072F02314128C0000E1AF /* sideMenu_testUITests.swift */; };
+		31307301231415450000E1AF /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31307300231415450000E1AF /* SWRevealViewController.m */; };
+		31307303231416160000E1AF /* MenuViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31307302231416150000E1AF /* MenuViewCell.swift */; };
+		313073052314164F0000E1AF /* sideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313073042314164F0000E1AF /* sideViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,11 @@
 		313072EC2314128C0000E1AF /* sideMenu_testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sideMenu_testUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		313072F02314128C0000E1AF /* sideMenu_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sideMenu_testUITests.swift; sourceTree = "<group>"; };
 		313072F22314128C0000E1AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		313072FE231415440000E1AF /* sideMenu_test-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "sideMenu_test-Bridging-Header.h"; sourceTree = "<group>"; };
+		313072FF231415450000E1AF /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		31307300231415450000E1AF /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		31307302231416150000E1AF /* MenuViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewCell.swift; sourceTree = "<group>"; };
+		313073042314164F0000E1AF /* sideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sideViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +107,15 @@
 			children = (
 				313072D0231412750000E1AF /* AppDelegate.swift */,
 				313072D2231412750000E1AF /* ViewController.swift */,
+				313073042314164F0000E1AF /* sideViewController.swift */,
+				31307302231416150000E1AF /* MenuViewCell.swift */,
 				313072D4231412750000E1AF /* Main.storyboard */,
+				313072FF231415450000E1AF /* SWRevealViewController.h */,
+				31307300231415450000E1AF /* SWRevealViewController.m */,
 				313072D72314128A0000E1AF /* Assets.xcassets */,
 				313072D92314128A0000E1AF /* LaunchScreen.storyboard */,
 				313072DC2314128A0000E1AF /* Info.plist */,
+				313072FE231415440000E1AF /* sideMenu_test-Bridging-Header.h */,
 			);
 			path = sideMenu_test;
 			sourceTree = "<group>";
@@ -193,6 +206,7 @@
 				TargetAttributes = {
 					313072CC231412750000E1AF = {
 						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
 					};
 					313072E02314128B0000E1AF = {
 						CreatedOnToolsVersion = 10.3;
@@ -257,7 +271,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				313072D3231412750000E1AF /* ViewController.swift in Sources */,
+				31307303231416160000E1AF /* MenuViewCell.swift in Sources */,
 				313072D1231412750000E1AF /* AppDelegate.swift in Sources */,
+				313073052314164F0000E1AF /* sideViewController.swift in Sources */,
+				31307301231415450000E1AF /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,16 +449,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = sideMenu_test/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "dhenusya-Demo.sideMenu-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_OBJC_BRIDGING_HEADER = "sideMenu_test/sideMenu_test-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -449,16 +470,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = sideMenu_test/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "dhenusya-Demo.sideMenu-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_OBJC_BRIDGING_HEADER = "sideMenu_test/sideMenu_test-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
