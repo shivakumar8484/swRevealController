@@ -17,6 +17,8 @@
 		31307301231415450000E1AF /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31307300231415450000E1AF /* SWRevealViewController.m */; };
 		31307303231416160000E1AF /* MenuViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31307302231416150000E1AF /* MenuViewCell.swift */; };
 		313073052314164F0000E1AF /* sideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313073042314164F0000E1AF /* sideViewController.swift */; };
+		A5AF3DA523150836009F95D7 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AF3DA423150836009F95D7 /* HomeVC.swift */; };
+		A5AF3DA723150844009F95D7 /* CartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AF3DA623150844009F95D7 /* CartVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		31307300231415450000E1AF /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		31307302231416150000E1AF /* MenuViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewCell.swift; sourceTree = "<group>"; };
 		313073042314164F0000E1AF /* sideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sideViewController.swift; sourceTree = "<group>"; };
+		A5AF3DA423150836009F95D7 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		A5AF3DA623150844009F95D7 /* CartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,8 @@
 				313072D0231412750000E1AF /* AppDelegate.swift */,
 				313072D2231412750000E1AF /* ViewController.swift */,
 				313073042314164F0000E1AF /* sideViewController.swift */,
+				A5AF3DA423150836009F95D7 /* HomeVC.swift */,
+				A5AF3DA623150844009F95D7 /* CartVC.swift */,
 				31307302231416150000E1AF /* MenuViewCell.swift */,
 				313072D4231412750000E1AF /* Main.storyboard */,
 				313072FF231415450000E1AF /* SWRevealViewController.h */,
@@ -272,7 +278,9 @@
 			files = (
 				313072D3231412750000E1AF /* ViewController.swift in Sources */,
 				31307303231416160000E1AF /* MenuViewCell.swift in Sources */,
+				A5AF3DA723150844009F95D7 /* CartVC.swift in Sources */,
 				313072D1231412750000E1AF /* AppDelegate.swift in Sources */,
+				A5AF3DA523150836009F95D7 /* HomeVC.swift in Sources */,
 				313073052314164F0000E1AF /* sideViewController.swift in Sources */,
 				31307301231415450000E1AF /* SWRevealViewController.m in Sources */,
 			);
